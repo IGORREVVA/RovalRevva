@@ -1,0 +1,55 @@
+@import "variables";
+@import "utd-reset";
+@import "fonts";
+@import "typography";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0,0,0,0.05);
+}
+
+main {
+  padding-top: 150px;
+
+  @include breakpoint(extra-small) {
+    padding-top: 125px;
+  }
+
+  @include breakpoint(small-tablet-portrait) {
+    padding-top: 100px;
+  }
+}
+
+.container{
+	max-width: 1460px;
+	margin: 0 auto;
+    padding: 0 20px;
+
+	@include breakpoint(medium) {
+        max-width: 1031px;
+    }
+
+	@include breakpoint(small) {
+        max-width: 807px;
+    }
+
+	@include breakpoint(extra-small) {
+        max-width: 640px;
+    }
+
+	@include breakpoint(small-tablet-portrait) {
+        max-width: 520px;
+    }
+
+	@include breakpoint(mobile-landscape) {
+        max-width: 420px;
+    }
+
+	@include breakpoint(mobile) {
+        max-width: 100%;
+    }
+}
+

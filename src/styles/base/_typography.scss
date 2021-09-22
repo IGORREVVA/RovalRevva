@@ -1,0 +1,120 @@
+body{
+    font-family: 'Calibre', sans-serif;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    @include breakpoint(medium) {
+        line-height: 20px;
+    }
+
+    @include breakpoint(small) {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    @include breakpoint(extra-small) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.text--big{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.link{
+    font-size: 16px;
+    line-height: 16px;
+    transition: opacity .5s ease;
+}
+
+.link--hover{
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.link--medium{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+
+    @include breakpoint(medium) {
+        line-height: 22px;
+    }
+
+    @include breakpoint(extra-small) {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    @include breakpoint(mobile-landscape) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+.link--big{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+
+    @include breakpoint(medium) {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    @include breakpoint(mobile-landscape) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.title{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.title--small{
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.title--big{
+    font-size: 62px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 56px;
+
+    @include breakpoint(extra-small) {
+        font-size: 50px;
+    }
+
+    @include breakpoint(small-tablet-portrait){
+        font-size: 40px;
+        letter-spacing: 0.97px;
+        line-height: 42px;
+    }
+
+    @include breakpoint(mobile-landscape) {
+        font-size: 30px;
+        letter-spacing: 0.97px;
+        line-height: 32px;
+    }
+}
+
+.text-content {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+

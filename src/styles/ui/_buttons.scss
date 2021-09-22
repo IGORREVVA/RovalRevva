@@ -1,0 +1,73 @@
+.button {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 0;
+    border-radius: 0;
+    background-color: #ededed;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: #121212;
+    cursor: pointer;
+
+    @include breakpoint(extra-small) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        font-size: 18px;
+    }
+
+    @include breakpoint(mobile-landscape) {
+        font-size: 16px;
+    }
+}
+
+.button--main{
+    display: inline-block;
+    min-width: 214px;
+    padding: 19px 15px 13px 15px;
+    background-color: #D6161D;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 16px;
+    text-decoration: none;
+    font-style: normal;
+    transition: .3s all ease-out;
+
+    &:hover{
+        background-color: #222222;
+    }
+
+    @include breakpoint(extra-small) {
+        padding-top: 15px;
+        padding-bottom: 11px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    @include breakpoint(mobile-landscape) {
+        min-width: 180px;
+        padding: 12px 5px 9px;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 15px;
+    }
+}
+
+.button--small {
+    min-width: 150px;
+    padding: 14px 15px 10px 15px;
+}
+
+.button--bordered {
+    border-radius: 5px;
+}

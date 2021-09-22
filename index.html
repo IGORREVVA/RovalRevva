@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+    <title>Revva Test</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__announcement-bar">
+            <div class="header__announcement-bar-col"></div>
+            <div class="header__announcement-bar-col">
+                <p class="header__announcement-bar-text text">Built in headline</p>
+            </div>
+            <div class="header__announcement-bar-links header__announcement-bar-col">
+                <a class="header__announcement-bar-link link link--hover" href="tel:+1234567890">123-456-7890</a>
+                <a class="header__announcement-bar-link link link--hover" href="#">
+                    <svg class="header__announcement-bar-icon svg-inline--fa fa-map-marker-alt fa-w-12" width="10px" height="14px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="#fff" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                    </svg>
+                    Find a Dealer
+                </a>
+                <a class="header__announcement-bar-link link link--hover" href="#">Login/Sign Up</a>
+            </div>
+        </div>
+        <div class="header__main-bar">
+            <button class="header__main-bar-burger-menu" type="button">
+                <span></span>
+            </button>
+            <a class="header__main-bar-logo" href="#">
+                <img class="header__main-bar-img" src="./src/assets/img/roval-logo.png"
+                     srcset="./src/assets/img/roval-logo2x.png 2x" alt="Roval Logo">
+            </a>
+            <nav class="header__main-bar-nav">
+                <ul class="header__main-bar-list">
+                    <li class="header__main-bar-item header__main-bar-item-dropdown">
+                        <a class="header__main-bar-link link link--medium" href="#">SHOP</a>
+                        <svg class="header__main-bar-icon icon icon-chevron-right" width="15" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 7 12">
+                            <path fill="#121212" d="M5.01 5.984L0 1.041.707.333l5.651 5.651-5.65 5.651L0 10.928z" fill-rule="nonzero"></path>
+                        </svg>
+                        <div class="header__main-bar-dropdown-wrapper">
+                            <button class="header__main-bar-item-button button" type="button">
+                                <span class="header__main-bar-item-button-icon">
+                                    <svg class="icon icon--wide icon-arrow-dark" style="transform: rotate(180deg)" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                        <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"></path>
+                                    </svg>
+                                </span>
+                                SHOP
+                            </button>
+                            <ul class="header__main-bar-dropdown container">
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link" href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Road
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link " href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Gravel
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link" href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        XC
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link" href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Trail
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link" href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Triathlon
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item header__main-bar-dropdown-item--links">
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Accessories
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        True Deals
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                    <p class="header__main-bar-dropdown-item-text text text--big">
+                                        Up to 70% off
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__main-bar-item header__main-bar-item-dropdown">
+                        <a class="header__main-bar-link link link--medium" href="#">OUR STORY</a>
+                        <svg class="header__main-bar-icon icon icon-chevron-right" width="15" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 7 12">
+                            <path fill="#121212" d="M5.01 5.984L0 1.041.707.333l5.651 5.651-5.65 5.651L0 10.928z" fill-rule="nonzero"></path>
+                        </svg>
+                        <div class="header__main-bar-dropdown-wrapper">
+                            <button class="header__main-bar-item-button button" type="button">
+                                <span class="header__main-bar-item-button-icon">
+                                    <svg class="icon icon--wide icon-arrow-dark" style="transform: rotate(180deg)" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                        <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"></path>
+                                    </svg>
+                                </span>
+                                OUR STORy
+                            </button>
+                            <ul class="header__main-bar-dropdown container">
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link" href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                         Out promise
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link " href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Our people
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item">
+                                    <a class="header__main-bar-dropdown-img-link" href="#">
+                                        <img class="header__main-bar-dropdown-img" src="./src/assets/img/dropdown-image.jpg" alt="">
+                                    </a>
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Our process
+                                        <svg class="icon icon--wide icon-arrow-dark" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                            <path fill="#121212" d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__main-bar-item header__main-bar-item-dropdown">
+                        <a class="header__main-bar-link link link--medium" href="#">SUPPORT</a>
+                        <svg class="header__main-bar-icon icon icon-chevron-right" width="15" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 7 12">
+                            <path fill="#121212" d="M5.01 5.984L0 1.041.707.333l5.651 5.651-5.65 5.651L0 10.928z" fill-rule="nonzero"></path>
+                        </svg>
+                        <div class="header__main-bar-dropdown-wrapper">
+                            <button class="header__main-bar-item-button button" type="button">
+                                <span class="header__main-bar-item-button-icon">
+                                    <svg class="icon icon--wide icon-arrow-dark" style="transform: rotate(180deg)" width="18" height="12" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 18 12">
+                                        <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-5.65 5.651-.708-.707z" fill="#121212" fill-rule="nonzero"></path>
+                                    </svg>
+                                </span>
+                                SUppORT
+                            </button>
+                            <ul class="header__main-bar-dropdown header__main-bar-dropdown--small container">
+                                <li class="header__main-bar-dropdown-item header__main-bar-dropdown-item--bordered">
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Shipping & Returns
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item header__main-bar-dropdown-item--bordered">
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Warranty
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item header__main-bar-dropdown-item--bordered">
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        faqs
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item header__main-bar-dropdown-item--bordered">
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Product registration
+                                    </a>
+                                </li>
+                                <li class="header__main-bar-dropdown-item header__main-bar-dropdown-item--bordered">
+                                    <a class="header__main-bar-dropdown-item-link link link--big" href="#">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__main-bar-item">
+                        <a class="header__main-bar-link link link--medium" href="#">JOURNAL</a>
+                    </li>
+                </ul>
+                <ul class="header__main-bar-list header__main-bar-list--additional">
+                    <li class="header__main-bar-item header__main-bar-item--bg">
+                        <a class="header__main-bar-link link link--medium" href="#" >
+                            <svg class="header__main-bar-icon svg-inline--fa fa-map-marker-alt fa-w-12" width="10px" height="14px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="#000" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                            </svg>
+                            Find a Dealer
+                        </a>
+                    </li>
+                    <li class="header__main-bar-item header__main-bar-item--bg">
+                        <a href="" class="header__main-bar-link link link--medium">
+                            Login/Sign Up
+                        </a>
+                    </li>
+                    <li class="header__main-bar-item">
+                        <a class="header__main-bar-link link link--medium" href="tel:+1234567890">
+                            <span class="header__main-bar-link-decoration link link--medium">call us at:</span>
+                            123-456-7890
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__main-bar-links">
+                <a class="header__main-bar-search-link link link--hover" href="#">
+                    <svg class="svg-inline--fa fa-search fa-w-16" width="20px" height="20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="#000" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                    </svg>
+                </a>
+                <div class="header__main-bar-cart header__main-bar-cart--bg">
+                    <a class="header__main-bar-cart-link link link--hover" href="#">
+                        <svg class="svg-inline--fa fa-shopping-cart fa-w-18" width="24px" height="22px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="modal" id="modal">
+            <div class="modal__wrapper">
+                <div class="modal__body">
+                    <div class="modal__inner">
+                        <div class="modal__close">
+                            <svg class="svg-inline--fa fa-times fa-w-11" width="20" height="20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                <path fill="#00000" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                            </svg>
+                        </div>
+                        <div class="modal__title">Modal Two</div>
+                        <div class="modal__text">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Veniam, iure, corporis
+                            eum beatae ut deleniti aperiam placeat maxime, eveniet
+                            non error. Fugiat placeat sit voluptatibus cumque quis
+                            adipisci porro quod eligendi maxime nemo impedit omnis,
+                        </div>
+                        <button class="modal__submit-button button button--main button--small button--bordered" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="banner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item-wrapper">
+                            <picture>
+                                <source srcset="./src/assets/img/banner-image-tablet.jpg" media="(max-width: 768px)">
+                                <source srcset="./src/assets/img/banner-image-mobile.jpg" media="(max-width: 480px)">
+                                <img class="swiper-slide__item-image" src="./src/assets/img/banner-image.jpg"
+                                     srcset="./src/assets/img/banner-image2x.jpg 2x"
+                                     alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide__content">
+                            <h2 class="swiper-slide__title title title--big">seek and enjoy</h2>
+                            <button class="swiper-slide__button button button--main">
+                                view terra wheels
+                                <span class="swiper-slide__arrow">
+                                    <svg class="icon icon--wide icon-arrow-white" width="18" height="12" aria-hidden="true" focusable="false" role="presentation"  viewBox="0 0 18 12">
+                                        <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-.707.707-4.944 4.944-.707-.707 4.444-4.444z" fill="#FFF" fill-rule="nonzero"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item-wrapper">
+                            <picture>
+                                <source srcset="./src/assets/img/banner-image-tablet.jpg" media="(max-width: 768px)">
+                                <source srcset="./src/assets/img/banner-image-mobile.jpg" media="(max-width: 480px)">
+                                <img class="swiper-slide__item-image" src="./src/assets/img/banner-image.jpg"
+                                     srcset="./src/assets/img/banner-image2x.jpg 2x"
+                                     alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide__content">
+                            <h2 class="swiper-slide__title title title--big">seek and enjoy</h2>
+                            <button class="swiper-slide__button button button--main">
+                                view terra wheels
+                                <span class="swiper-slide__arrow">
+                                <svg class="icon icon--wide icon-arrow-white" width="18" height="12" aria-hidden="true" focusable="false" role="presentation"  viewBox="0 0 18 12">
+                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-.707.707-4.944 4.944-.707-.707 4.444-4.444z" fill="#FFF" fill-rule="nonzero"></path>
+                                </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item-wrapper">
+                            <video class="swiper-slide__item-video" muted autoplay loop src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4">
+                                <source type="video/mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4">
+                            </video>
+                        </div>
+                        <div class="swiper-slide__content">
+                            <h2 class="swiper-slide__title title title--big">seek and enjoy</h2>
+                            <button class="swiper-slide__button button button--main">
+                                view terra wheels
+                                <span class="swiper-slide__arrow">
+                                <svg class="icon icon--wide icon-arrow-white" width="18" height="12" aria-hidden="true" focusable="false" role="presentation"  viewBox="0 0 18 12">
+                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-.707.707-4.944 4.944-.707-.707 4.444-4.444z" fill="#FFF" fill-rule="nonzero"></path>
+                                </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__item-wrapper">
+                            <video class="swiper-slide__item-video" muted autoplay loop src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4">
+                                <source type="video/mp4" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4">
+                            </video>
+                        </div>
+                        <div class="swiper-slide__content">
+                            <h2 class="swiper-slide__title title title--big">seek and enjoy</h2>
+                            <button class="swiper-slide__button button button--main">
+                                view terra wheels
+                                <span class="swiper-slide__arrow">
+                                <svg class="icon icon--wide icon-arrow-white" width="18" height="12" aria-hidden="true" focusable="false" role="presentation"  viewBox="0 0 18 12">
+                                    <path d="M15.54 6.484H.75v-1h14.79l-4.444-4.443.707-.708 5.651 5.651-.707.707-4.944 4.944-.707-.707 4.444-4.444z" fill="#FFF" fill-rule="nonzero"></path>
+                                </svg>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/body-scroll-lock"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+</body>
+</html>
